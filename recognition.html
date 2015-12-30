@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Speech platform @ASLP, NWPU">
+    <meta name="author" content="Xiaoxuan Wang" email="xiaoxuan.wang2010@gmail.com">
+
+    <title>西工大智能语音开放平台</title>
+    <link href="imgs/aslplogo.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target="#nav-document">
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid header">
+        <div class="navbar-header">
+          <!-- Hunberger menu -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- End Hunberger menu -->
+
+          <a class="navbar-brand" href="index.html">
+            <img alt="" src="imgs/aslplogo.png">
+            <h3>西工大智能语音开放平台</h3>
+          </a>
+        </div>
+        <!-- Header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="recognition.html">语音识别</a></li>
+            <li><a href="synthesis.html">语音合成</a></li>
+            <li><a href="collection.html">语音采集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar" role="tablist">
+            <li id="nav-intro-li" role="presentation" class="active"><a href="#intro" aria-controls="intro" role="tab" data-toggle="tab">语音输入</a></li>
+            <li id="nav-demo-li" role="presentation"><a href="#demo" aria-controls="demo" role="tab" data-toggle="tab">在线体验</a></li>
+            <li id="nav-doc-li"role="presentation">
+              <a id="nav-docs" href="#document" aria-controls="document" role="tab" data-toggle="tab">开发者文档</a>
+              <div id="nav-document" class="navbar navbar-default">
+              <ul class="nav navbar-nav" role="tablist">
+                <li class="doc-list"> <a href="#permission">权限说明</a></li>
+                <li class="doc-list"> <a href="#tempfile">临时文件</a></li>
+                <li class="doc-list"> <a href="#connection">连接网络</a></li>
+                <li class="doc-list"> <a href="#send">发送音频</a></li>
+                <li class="doc-list"> <a href="#result">识别结果</a></li>
+                <li class="doc-list"> <a href="#close">关闭连接</a></li>
+              </ul>
+              </div>
+            </li>
+          </ul>
+        </div> <!-- ./nav-sidebar -->
+        <!-- Main content of Introduction-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-content">
+          <div role="tabpanel" class="tab-pane active" id="intro">
+            <div class="sub-section">
+              <h3 class="page-header">语音识别： 将声音转化成文字的技术</h3>
+              <p>语音识别，也被称为自动语音识别(Automatic Speech Recognition, ASR)或语音转文本识别(Speech To Text, STT)，其目标是让计算机自动将人类的语音内容转换为相应的文字。</p>
+            </div>
+
+            <div class="sub-section spec-list">
+              <h4 class="page-header">应用场景</h4>
+              <ul>
+                <li>
+                  <img src="imgs/asr1.jpg"/>
+                  <h4>语音输入</h4>
+                  <p>君子动口不动手：解放双手，动动嘴就能输入文字</p>
+                </li>
+                <li>
+                  <img src="imgs/asr2.jpg"/>
+                  <h4>语音搜索</h4>
+                  <p>快人一步：语音说出你想要的内容，搜索结果快速呈现</p>
+                </li>
+                <li>
+                  <img src="imgs/asr3.jpg"/>
+                  <h4>语音对话</h4>
+                  <p>无缝交互：与机器设备语音交互，自然、便捷、人性化</p>
+                </li>
+                <li>
+                  <img src="imgs/asr4.jpg"/>
+                  <h4>音频内容转写文字</h4>
+                  <p>自动速记员：海量录音自动转成文字，便于检索与管理</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sub-section spec-list">
+              <h4 class="page-header">语音输入APP下载</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="app-sample-img" src="imgs/app-asr-sample.png">
+                </div>
+                <div class="col-md-4">
+                  <img class="app-sample-img" src="imgs/qr-asr.png" class="img-responsive" alt="QR code for ASR app">
+                  <p class="center"><small>语音输入Android版APP<br>扫码直接下载</small></p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End intro tabpanel -->
+
+          <div role="tabpanel" class="tab-pane" id="demo">
+            <div class="sub-section">
+              <h4 class="page-header">语音识别在线体验</h4>
+              <p class="center"><small>点击话筒按钮后，请对准话筒开始说话，在安静环境下测试。</small></p>
+              <textarea id="trans" class="form-control" rows="10"></textarea>
+              <input type="image" src="imgs/demo-speech-btn.png" id="buttonToggleListening" class="img-responsive play-btn" onclick="toggleListening();" onmouseover="$(this).attr('src','imgs/demo-speech-btn-hover.png')" onmouseout="$(this).attr('src','imgs/demo-speech-btn.png')">
+               
+              <pre id="log">LOG</pre> 
+              <small>
+                注意事项：
+                <ol>
+                  <li>目前仅支持HTML5浏览器（Chrome或Firefox），如不能正常使用，请更新浏览器至最新版本。</li>
+                  <li>如浏览器弹出是否“使用您的麦克风”，请选择允许。</li>
+                  <li>如识别有问题，请首先检查麦克风设置，如音量大小。</li>
+                  <li>识别完毕，请再次点击话筒按钮退出识别服务，以释放识别资源供其他用户使用。</li>
+                  <li>有时由于网络速度问题和服务器资源抢占问题，识别速度缓慢。</li>
+                  <li>目前仅支持校园网使用，如需要在校外体验，请使用西工大VPN登陆。</li>
+                </ol>
+                如有任何问题及建议请联系：speechplatform@nwpu-aslp.org。
+              </small>
+            </div>
+          </div><!-- End demo tabpanel -->
+
+          <div role="tabpanel" class="tab-pane" id="document">
+            <div class="sub-section">
+              <h4 class="page-header">开发者文档</h4>
+              <img class="img-responsive" id="flowchart" src="imgs/flowchart-sample.jpg">
+              <div id="permission" class="function">
+                <h4> 权限说明 </h4>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>变量名</th>
+                      <th>含义</th>
+                    </tr>
+                    <tr>
+                      <td>WRITE_EXTERNAL_STORAGE</td>
+                      <td>往文件内写入数据的权限</td>
+                    </tr>
+                    <tr>
+                      <td>MOUNT_UNMOUNT_FILESYSTEMS</td>
+                      <td>创建文件权限</td>
+                    </tr>
+                    <tr>
+                      <td>RECORD_AUDIO</td>
+                      <td>录音权限</td>
+                    </tr>
+                    <tr>
+                      <td>INTERNET</td>
+                      <td>互联网权限</td>
+                    </tr>
+                    <tr>
+                      <td>ACCESS_NETWORK_STATE</td>
+                      <td>获取网络状态权限</td>
+                    </tr>
+                    <tr>
+                      <td>ACCESS_WIFI_STATE</td>
+                      <td>获取无线网络状态权限</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div id="tempfile" class="function">
+                <h4> 临时文件 </h4>
+                <p class="func-name">public void NOTempFile()</p>
+                <p>说明：设置不存储临时音频文件。</p>
+                <p>参数：无</p>
+                <p>返回值
+                  <ul>
+                    <li> 0 - 创建成功 </li>
+                    <li>1 - 创建失败 </li>
+                  </ul>
+                </p>
+                <br>
+                <p class="func-name">public int CreatTempFile()</p>
+                <p>说明：设置存储临时文件在默认路径下。</p>
+                <p>默认路径：SD卡下sound_temp文件夹下，无SD卡系统内存sound_temp下。</p>
+                <p>参数：无</p>
+                <p>返回值
+                  <ul>
+                    <li> 0 - 创建成功 </li>
+                    <li>1 - 创建失败 </li>
+                  </ul>
+                </p>
+                <br>
+                <p class="func-name">public int CreatTempFile(String filepath,String filename)</p>
+                <p>说明：自定义存储路径。</p>
+                <p>参数格式如下：</p>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>参数名</th>
+                      <th>类型</th>
+                      <th>说明</th>
+                    </tr>
+                    <tr>
+                      <td>filepath</td><td>String</td><td>存储文件路径</td>
+                    </tr>
+                    <tr>
+                      <td>filename</td><td>String</td><td>存储文件名</td>
+                    </tr>
+                  </table>
+                </div>
+                <p>返回值
+                  <ul>
+                    <li> 0 - 创建成功 </li>
+                    <li>1 - 创建失败 </li>
+                  </ul>
+                </p>
+              </div>
+
+              <div id="connection" class="function">
+                <h4> 连接网络 </h4>
+                <p class="func-name">public int connect(int connectTimeout)</p>
+                <p>说明：连接网络。</p>
+                <p>参数格式如下：</p>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>参数名</th>
+                      <th>类型</th>
+                      <th>说明</th>
+                    </tr>
+                    <tr>
+                      <td>connectTimeout</td><td>int</td><td>connectTimeout指定毫秒内没有连接成功，则断定网络不可用</td>
+                    </tr>
+                  </table>
+                </div>
+                <p>返回值
+                  <ul>
+                    <li> 0 - 创建成功 </li>
+                    <li>1 - 创建失败 </li>
+                  </ul>
+                </p>
+              </div>
+              <div id="send" class="function">
+                <h4> 发送音频 </h4>
+                <p class="func-name">public void send()</p>
+                <p>说明：发送音频到服务器。</p>
+                <p>参数：无</p>
+                <p>返回值：无</p>
+              </div>
+              <div id="receive" class="function">
+                <h4> 接收结果 </h4>
+                <p class="func-name">public void receive()</p>
+                <p>说明：接收识别结果。</p>
+                <p>参数：无</p>
+                <p>返回值：语音识别结果。</p>
+                <br>
+                <p class="func-name">public String getmessage()</p>
+                <p>说明：获取识别结果。</p>
+                <p>参数：无</p>
+                <p>返回值：服务器返回结果，包含识别状态和识别结果。</p>
+              </div>
+              <div id="close" class="function">
+                <h4> 关闭连接 </h4>
+                <p class="func-name">public void close()</p>
+                <p>说明：关闭连接。</p>
+                <p>参数：无</p>
+                <p>返回值：无</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- End Main content -->
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+      <img class="img-responsive" src="imgs/qr-lab.png">
+        <span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span>
+        <span class="text-muted">lxie@nwpu-aslp.org </span>
+        <span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+        <span class="text-muted">实验室主页 <a href="http://www.npu-aslp.org"> http://www.npu-aslp.org</a></span>
+        <p class="text-muted">&copy; 版权所有 2015 ASLP-NWPU 西北工业大学音频语音与语言处理研究组</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/other/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#nav-demo-li").click(function(){
+              $("#nav-doc-li").removeClass("active");
+              $("#nav-intro-li").removeClass("active");
+              $("#nav-document").hide();
+          });
+
+          $("#nav-intro-li").click(function(){
+              $("#nav-doc-li").removeClass("active");
+              $("#nav-demo-li").removeClass("active");
+              $("#nav-document").hide();
+          });
+
+          // Initialization
+          $("#nav-document").hide();
+
+          $("#nav-docs").click(function(){
+              $("#nav-document").slideToggle();
+          });
+      });
+
+    </script>
+    
+
+    <script src="js/dictate.js"></script>
+    <script src="js/recorder.js"></script>
+    <script src="js/mob.js"></script>
+
+  </body>
+</html>

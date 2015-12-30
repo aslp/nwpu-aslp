@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Speech platform @ASLP, NWPU">
+    <meta name="author" content="Xiaoxuan Wang" email="xiaoxuan.wang2010@gmail.com">
+
+    <title>西工大智能语音开放平台</title>
+    <link href="imgs/aslplogo.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-scrollspy">
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid header">
+        <div class="navbar-header">
+          <!-- Hunberger menu -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- End Hunberger menu -->
+
+          <a class="navbar-brand" href="index.html">
+            <img alt="" src="imgs/aslplogo.png">
+            <h3>西工大智能语音开放平台</h3>
+          </a>
+        </div>
+        <!-- Header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="recognition.html">语音识别</a></li>
+            <li><a href="synthesis.html">语音合成</a></li>
+            <li class="active"><a href="collection.html">语音采集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="navbar-scrollspy">
+        <ul class="nav nav-sidebar affix" role="tablist">
+          <li role="presentation" class="active"><a href="#intro" class="nav-link">语音采集</a></li>
+          <li role="presentation"><a href="#registration">用户注册</a></li>
+          <li role="presentation"><a href="#recording">录音采集</a></li>
+          <li role="presentation"><a href="#edit">用户信息修改</a></li>
+          <li role="presentation"><a href="#confirmation">录音确认</a>
+          </li>
+        </ul>
+      </div> <!-- ./nav-sidebar -->
+
+    <!-- Main content of Introduction-->
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-content">
+        <div id="intro">
+          <div class="sub-section">
+            <h3 class="page-header">语音采集：用您的录音提升语音识别效果</h3>
+            <div class="row">
+            <div class="col-md-7">
+              <p>语音识别的声学建模技术是一项复杂的大数据处理技术，受到信道、噪声、口音、说话风格等多个可变因素的影响。因此训练鲁棒的声学模型需要大量的训练样本。因此，我们通过采集不同人的手机录音来不断改善识别效果。您贡献的样本将极大提升语音识别的性能!</p>
+              <p> 扫描二维码，下载手机语音采样Android版APP。</p>
+            </div>
+            <div class="col-md-4">
+              <img id="qr-sample" class="img-responsive img-thumbnail" src="imgs/qr-sample.png" />
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="registration">
+          <div class="step-content">
+            <h4 class="page-header">
+              <span class="step"> Step 1 </span> 用户注册
+            </h4>
+            <ul>
+            <li>安装软件后打开，进入登录界面，如果已注册直接输入用户名和密码进行登录；如果未注册则点击注册按钮进入注册界面，输入用户名和密码以及个人相关信息进行注册。</li>
+            <div class="row image-container">
+              <div class="row-md-4 img">
+                <img class="sample-img" alt="login" src="imgs/voice-collection/c_1.png">
+              </div>
+              <div class="row-md-4 img">
+                <img class="sample-img" alt="login" src="imgs/voice-collection/c_2.png">
+              </div>
+              <div class="row-md-4 img">
+                <img class="sample-img" alt="login" src="imgs/voice-collection/c_3.png">
+              </div>
+            </div>
+            <li> 对自己口音不清楚的点击口音旁边的按钮<img src="imgs/voice-collection/c_4.png" width="25" height="25">查看方言区域介绍，然后进行选择。 </li>
+            <img class="single-img" alt="question" src="imgs/voice-collection/c_5.png">
+            </ul>
+          </div>
+        </div>
+
+        <div id="recording">
+          <div class="step-content">
+            <h4 class="page-header">
+            <span class="step"> Step 2 </span> 录音采集
+            </h4>
+            <ul>
+            <li>点击注册成功后进入主界面。主界面顶部灰色小字显示当前你已录入且质量合格的句子数量，界面中部偏上为当前要录入的句子，界面中部偏下的红色圆圈为录音按钮，界面下部为录音的注意事项。界面顶栏左边按钮点击后可查看录音示例。界面顶栏右边按钮点击可查看个人信息。</li>
+            <img class="single-img" alt="question" src="imgs/voice-collection/c_6.png">
+            <li>录音时点击界面中央的录音按钮，按住不放，录音按钮颜色变为蓝色，界面上方出现提示“开始录音...”时方可进行说话录音。</li>
+            <img class="single-img" alt="recording" src="imgs/voice-collection/c_7.png">
+            <li>
+              说话完成后松开按钮，录音完成，此时录音按钮左右两边分别出现<img src="imgs/voice-collection/c_8.png" width="22" height="22">和<img src="imgs/voice-collection/c_9.png" width="22" height="22">两个按钮，录音按钮显示播放，此时点击播放可进行录音播放，以检查录音效果。点击<img src="imgs/voice-collection/c_8.png" width="22" height="22">将录音上传，上传完成后继续下一句录音，点击<img src="imgs/voice-collection/c_9.png" width="22" height="22">将删除当前录音，进行重录。
+            </li>
+              <div class="row image-container">
+                <div class="row-md-6 img">
+                  <img class="sample-img" alt="login" src="imgs/voice-collection/c_10.png">
+                </div>
+                <div class="row-md-6 img">
+                  <img class="sample-img" alt="login" src="imgs/voice-collection/c_11.png">
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div id="edit">
+          <div class="step-content">
+            <h4 class="page-header">
+              <span class="step"> Step 3 </span> 用户信息修改
+            </h4>
+            <ul>
+            <li>点击主界面顶栏右边头像可进入个人信息界面，界面上方显示当前已录入且质量合格句子数量，界面下方显示个人信息，以及退出登录按钮。界面顶栏右边为编辑按钮，点击可进行个人信息更改。</li>
+              <div class="row image-container">
+                <div class="row-md-6 img">
+                  <img class="sample-img" alt="login" src="imgs/voice-collection/c_12.png">
+                </div>
+                <div class="row-md-6 img">
+                  <img class="sample-img" alt="login" src="imgs/voice-collection/c_13.png">
+                </div>
+              </div>
+              <li>更改个人信息后点击保存按钮进行保存，保存成功后返回到个人信息界面。
+              </li>
+              <img class="single-img" alt="recording" src="imgs/voice-collection/c_14.png">
+            </ul>
+          </div>
+        </div>
+
+        <div id="confirmation">
+          <div class="step-content">
+            <h4 class="page-header">
+              <span class="step"> Step 4 </span> 录音确认
+            </h4>
+            <p>录音结束后，登录网站进行质量检查和确认。</p>
+            <p>网址为：http://10.13.34.40:8063/Speech/home/wavtest.php?name=<span style="color:blue;font-weight: bold;">username</span>&amp;passwd=<span style="color:blue;font-weight: bold;">password</span> 其中， </p>
+            <p><span style="color:blue;font-weight: bold;">username</span>：为您的用户名 </p>
+            <p><span style="color:blue;font-weight: bold;">password</span>：为您设定的密码</p>
+            <img class="img-responsive img-thumbnail" src="imgs/voice-collection/c_15.png">
+        </div>
+       </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+      <img class="img-responsive" src="imgs/qr-lab.png">
+        <span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span>
+        <span class="text-muted">lxie@nwpu-aslp.org </span>
+        <span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+        <span class="text-muted">实验室主页 <a href="http://www.npu-aslp.org"> http://www.npu-aslp.org</a></span>
+        <p class="text-muted">&copy; 版权所有 2015 ASLP-NWPU 西北工业大学音频语音与语言处理研究组</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/other/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#myTab a').click(function (e) {
+         e.preventDefault();
+         $(this).tab('show');
+      });
+
+      $(function () {
+      $('#myTab a:last').tab('show');
+      })
+    </script>
+  </body>
+</html>

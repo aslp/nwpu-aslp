@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Speech platform @ASLP, NWPU">
+    <meta name="author" content="Xiaoxuan Wang" email="xiaoxuan.wang2010@gmail.com">
+
+    <title>西工大智能语音开放平台</title>
+    <link href="imgs/aslplogo.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <script src="js/synthesis.js"></script>
+  
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid header">
+        <div class="navbar-header">
+          <!-- Hunberger menu -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- End Hunberger menu -->
+
+          <a class="navbar-brand" href="index.html">
+            <img alt="" src="imgs/aslplogo.png">
+            <h3>西工大智能语音开放平台</h3>
+          </a>
+        </div>
+        <!-- Header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="recognition.html">语音识别</a></li>
+            <li class="active"><a href="synthesis.html">语音合成</a></li>
+            <li><a href="collection.html">语音采集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar" role="tablist">
+            <li role="presentation" class="active"><a href="#intro" aria-controls="intro" role="tab" data-toggle="tab">语音合成</a></li>
+            <li role="presentation"><a href="#demo" aria-controls="demo" role="tab" data-toggle="tab">在线体验</a></li>
+            <li role="presentation"><a href="#document" aria-controls="document" role="tab" data-toggle="tab">开发者文档</a>
+            </li>
+          </ul>
+        </div> <!-- ./nav-sidebar -->
+        <!-- Main content of Introduction-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-content">
+          <div role="tabpanel" class="tab-pane active" id="intro">
+            <div class="sub-section">
+              <h3 class="page-header">语音合成： 将文字转化成声音的技术</h3>
+              <p>语音合成（Speech Synthesis）或称文语转换（Text to Speech, TTS），其目标是用计算机合成出自然的人类的语音，及给定文本输入，合成出相应的语音。</p>
+            </div>
+
+            <div class="sub-section spec-list">
+              <h4 class="page-header">应用场景</h4>
+              <ul>
+                <li>
+                  <img src="imgs/tts1.jpg" />
+                  <h4>语音对话</h4>
+                  <p>机器会把合适的应答话语变成输出的语音与你交流。</p>
+                </li>
+                <li>
+                  <img src="imgs/tts2.jpg" />
+                  <h4>信息朗读</h4>
+                  <p>短信/新闻/聊天文本 -- 各种文字信息，皆可以让机器用语音读出。</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sub-section spec-list">
+              <h4 class="page-header">语音合成APP下载</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="app-sample-img" src="imgs/app-tts-sample.png">
+                </div>
+                <div class="col-md-4">
+                  <img class="app-sample-img" src="imgs/qr-tts.png" class="img-responsive" alt="QR code for TTS app">
+                  <p class="center"><small>语音合成Android版APP<br>扫码直接下载</small></p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End intro tabpanel -->
+
+          <div role="tabpanel" class="tab-pane" id="demo">
+            <div class="sub-section">
+              <h4 class="page-header">语音合成在线体验</h4>
+              <p class="center"><small>请输入要合成的文本，并点击播放按钮试听。</small></p>
+              <textarea class="form-control" id="tex" rows="10"></textarea>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-6 col-md-6 col-sm-8">
+                    <div class="radio-btn-group">
+                      <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 时尚女声
+                        </label>
+                        <label class="btn btn-primary">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> 成熟男声
+                        </label>
+                        <label class="btn btn-primary">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> 播音女声
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Play Button -->
+                  <div class='col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-1 col-xs-6'>
+                    <button type='button' id="play-btn" class='btn btn-info' onclick="TTS()"> Play </button>
+                  </div>
+
+                  <div><audio id="player"></audio></div>
+
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+
+              <small>
+                注意事项：
+                <ol>
+                  <li>目前仅支持HTML5浏览器（Chrome或Firefox），如不能正常使用，请更新浏览器至最新版本。</li>
+                  <li>目前仅支持校园网使用，如需要在校外体验，请使用西工大VPN登陆。</li>
+                </ol>
+                如有任何问题及建议请联系：speechplatform@nwpu-aslp.org。
+              </small>
+            </div>
+          </div><!-- End demo tabpanel -->
+
+          <div role="tabpanel" class="tab-pane" id="document">
+            <div class="sub-section">
+              <h4 class="page-header">开发者文档</h4>
+              <img class="img-responsive" id="flowchart" src="imgs/flowchart-sample.jpg">
+              <div id="permission" class="function">
+                <h4> 权限说明 </h4>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>变量名</th>
+                      <th>含义</th>
+                    </tr>
+                    <tr>
+                      <td>WRITE_EXTERNAL_STORAGE</td>
+                      <td>往文件内写入数据的权限</td>
+                    </tr>
+                    <tr>
+                      <td>MOUNT_UNMOUNT_FILESYSTEMS</td>
+                      <td>创建文件权限</td>
+                    </tr>
+                    <tr>
+                      <td>RECORD_AUDIO</td>
+                      <td>录音权限</td>
+                    </tr>
+                    <tr>
+                      <td>INTERNET</td>
+                      <td>互联网权限</td>
+                    </tr>
+                    <tr>
+                      <td>ACCESS_NETWORK_STATE</td>
+                      <td>获取网络状态权限</td>
+                    </tr>
+                    <tr>
+                      <td>ACCESS_WIFI_STATE</td>
+                      <td>获取无线网络状态权限</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div id="tempfile" class="function">
+                <h4> API指南 </h4>
+                <p class="func-name">public NWPUTalker(String path,String name)</p>
+                <p>说明：初始化类。</p>
+                <p>参数格式如下：</p>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>参数名</th>
+                      <th>类型</th>
+                      <th>说明</th>
+                    </tr>
+                    <tr>
+                      <td>path</td><td>String</td><td>合成结果保存位置</td>
+                    </tr>
+                    <tr>
+                      <td>name</td><td>String</td><td>文件名称</td>
+                    </tr>
+                  </table>
+                </div>
+                <p>返回值：无
+                </p>
+                <br>
+
+                <p class="func-name">public void getSpeech(String message,int model)</p>
+                <p>说明：得到服务器合成结果，并保存。</p>
+                <p>参数格式如下：</p>
+                <div  class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>参数名</th>
+                      <th>类型</th>
+                      <th>说明</th>
+                    </tr>
+                    <tr>
+                      <td>message</td><td>String</td><td>要合成的文本</td>
+                    </tr>
+                    <tr>
+                      <td>model</td><td>int</td><td>0：表示合成女声；1：表示合成男声。</td>
+                    </tr>
+                  </table>
+                </div>
+                <p>返回值：无 </p>
+                <br>
+
+                <p class="func-name">public boolean isRecieved()</p>
+                <p>说明：合成状态。</p>
+                <p>参数：无</p>
+                <p>返回值
+                  <ul>
+                    <li> false - 没有接受到结果或者正在接收。 </li>
+                    <li> true - 已接收到合成结果。 </li>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- End Main content -->
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+      <img class="img-responsive" src="imgs/qr-lab.png">
+        <span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span>
+        <span class="text-muted">lxie@nwpu-aslp.org </span>
+        <span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+        <span class="text-muted">实验室主页 <a href="http://www.npu-aslp.org"> http://www.npu-aslp.org</a></span>
+        <p class="text-muted">&copy; 版权所有 2015 ASLP-NWPU 西北工业大学音频语音与语言处理研究组</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/other/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#myTab a').click(function (e) {
+         e.preventDefault();
+         $(this).tab('show');
+      });
+
+      $(function () {
+      $('#myTab a:last').tab('show');
+      })
+    </script>
+  </body>
+</html>

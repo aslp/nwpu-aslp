@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Speech platform @ASLP, NWPU">
+    <meta name="author" content="Xiaoxuan Wang" email="xiaoxuan.wang2010@gmail.com">
+
+    <title>西工大智能语音开放平台</title>
+    <link href="imgs/aslplogo.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid header">
+        <div class="navbar-header">
+          <!-- Hunberger menu -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- End Hunberger menu -->
+
+          <a class="navbar-brand" href="index.html">
+            <img alt="" src="imgs/aslplogo.png">
+            <h3>西工大智能语音开放平台</h3>
+          </a>
+        </div>
+        <!-- Header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="recognition.html">语音识别</a></li>
+            <li><a href="synthesis.html">语音合成</a></li>
+            <li><a href="collection.html">语音采集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div id="carousel-example-generic" class="carousel slide carousel-img" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="imgs/sound1.png" alt="image one">
+            <div class="carousel-caption">
+              <!-- <h3>Image One</h3> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/sound2.png" alt="image two">
+            <div class="carousel-caption">
+              <!-- <h3>Image two</h3> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="imgs/sound3.png" alt="image three">
+            <div class="carousel-caption">
+              <!-- <h3>Image three</h3> -->
+            </div>
+          </div>
+		   <div class="item">
+            <img src="imgs/sound4.png" alt="image three">
+            <div class="carousel-caption">
+              <!-- <h3>Image four</h3> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <img src="imgs/arrow_left.png" alt="previous">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <img src="imgs/arrow_right.png" alt="previous">
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <!-- /.carousel-example-generic -->
+    </div> <!-- /.container -->
+
+    <!-- News Section -->
+    <!--
+    <div class="container-fluid">
+      <div class="news-section">
+        <h6> 新闻 | Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. </h6>
+      </div>
+    </div> -->
+    <!-- End News Section -->
+
+    <!-- Demo Section -->
+    <div class="container-fluid">
+      <div class="demo-section">
+        <div class="section-header">
+          <img src="imgs/line-seperator.png">
+          <span>Demo</span>
+          <img src="imgs/line-seperator.png">
+        </div> <!-- /.section-header -->
+        <div class="row">
+            <div class="col-md-4">
+              <button class="panel panel-default panel-btn" onclick="window.location.href='recognition.html'">
+                <div class="panel-body">
+                  <img id="demo-speech-btn" class="img-responsive demo-btn" src="imgs/demo-speech-btn.png">
+                  <h4>语音识别</h4>
+                  <span>将声音转化为文字<br>让你的应用长上耳朵</span>
+                  <img src="imgs/qr-asr.png" class="img-responsive qr-img" alt="QR code for ASR app">
+                  <span><small>语音输入Android版APP<br>扫码直接下载</small></span>
+                </div>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="panel panel-default panel-btn" onclick="window.location.href='synthesis.html'">
+                <div class="panel-body">
+                <img class="img-responsive demo-btn" src="imgs/demo-speaker-btn.png">
+                  <h4>语音合成</h4>
+                  <span>将文字转化为声音<br>让你的应用开口说话</span>
+                  <img src="imgs/qr-tts.png" class="img-responsive qr-img" alt="QR code for TTS app">
+                  <span><small>语音合成Android版APP<br>扫码直接下载</small></span>
+                </div>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="panel panel-default panel-btn" onclick="window.location.href='collection.html'">
+                <div class="panel-body">
+                <img class="img-responsive demo-btn" src="imgs/demo-sample-btn.png" >
+                  <h4>语音采集</h4>
+                  <span>贡献您的声音的样本<br>提高语音识别性能</span>
+                  <img src="imgs/qr-sample.png" class="img-responsive qr-img" alt="QR code for TTS app">
+                  <span><small>语音采样Android版APP<br>扫码直接下载</small></span>
+                </div>
+              </button>
+            </div>
+          </div>
+      </div> <!-- /.demo-section -->
+    </div>
+    <!-- End Demo Section -->
+
+    <!-- Platform Intro Section -->
+    <div class="container">
+      <div class="intro-section">
+        <div class="section-header">
+          <img src="imgs/line-seperator.png">
+          <span>智能语音平台</span>
+          <img src="imgs/line-seperator.png">
+        </div> <!-- /.section-header -->
+        <div class="row">
+          <div class="intro col-md-3 col-md-offset-3">
+            <img src="imgs/icon-intro1.png">
+            <h4>服务完全免费</h4>
+            <p>完全免费开放，Free！</p>
+          </div>
+          <div class="intro col-md-3">
+            <img src="imgs/icon-intro2.png">
+            <h4>云端深度学习技术</h4>
+            <p>先进的深度学习技术，云端服务！</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="intro col-md-3 col-md-offset-3">
+            <img src="imgs/icon-intro3.png">
+            <h4>为你的APP加上耳朵和嘴巴</h4>
+            <p>君子动口不动手！</p>
+          </div>
+
+          <div class="intro col-md-3">
+            <img src="imgs/icon-intro4.png">
+            <h4>自然语音交互</h4>
+            <p>大大改善应用的用户体验，让你的开发不再是难题！</p>
+          </div>
+        </div>
+      </div> <!-- /.intro-section -->
+    </div>
+    <!-- End Platform Intro Section -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+      <img class="img-responsive" src="imgs/qr-lab.png">
+        <span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span>
+        <span class="text-muted">lxie@nwpu-aslp.org </span>
+        <span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+        <span class="text-muted">实验室主页 <a href="http://www.npu-aslp.org"> http://www.npu-aslp.org</a></span>
+        <p class="text-muted">&copy; 版权所有 2015 ASLP-NWPU 西北工业大学音频语音与语言处理研究组</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/other/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

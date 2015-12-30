@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Speech platform @ASLP, NWPU">
+    <meta name="author" content="Xiaoxuan Wang" email="xiaoxuan.wang2010@gmail.com">
+
+    <title>西工大智能语音开放平台</title>
+    <link href="imgs/aslplogo.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid header">
+        <div class="navbar-header">
+          <!-- Hunberger menu -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- End Hunberger menu -->
+
+          <a class="navbar-brand" href="index.html">
+            <img alt="" src="imgs/aslplogo.png">
+            <h3>西工大智能语音开放平台</h3>
+          </a>
+        </div>
+        <!-- Header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="recognition.html">语音识别</a></li>
+            <li><a href="synthesis.html">语音合成</a></li>
+            <li><a href="collection.html">语音采集</a></li>
+            <li class="active"><a href="about.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container">
+
+      <img class="img-responsive " src="imgs/lab2.jpg" alt="lab">
+      <h3 class="about-header">关于我们</h3>
+      <p>西北工业大学音频、语音与语言处理组(ASLP@NPU)隶属于陕西省语音与图像信息处理重点实验室。研究组成立于1995年，经过20年的快速发展，已形成了人机语音交互、语音与音频信号处理、情感与听视觉多模态处理、多媒体内容分析与检索等主要研究方向。核心成员包括三位教授、一位副教授、九位海外兼职教授和40余名硕博士研究生。研究组与比利时、英国、美国、新加坡、香港、日本、台湾等国家和地区多所高校与研究机构建立了长期合作关系，与比利时布鲁塞尔自由大学建有中(中国)比(比利时)听视觉信号处理联合实验室，与香港城市大学建有创意媒体联合实验室，与英国东英吉利大学（UEA）签署有合作协议，并成为中欧LIAMA研究联盟的核心成员之一。实验室与百度、微软、IBM、华为、中兴等众多业界知名企业建立了广泛深入的技术合作。多年来，实验室承担了多项国家和省部级科研项目、国际合作项目以及企业合作项目，发表学术论文200余篇，取得了丰硕的研究成果。</p>
+
+      <h3 class="about-header">合作伙伴</h3>
+      <img class="img-responsive" src="imgs/collaborators.jpg" alt="collaborators">
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+      <img class="img-responsive" src="imgs/qr-lab.png">
+        <span class="glyphicon glyphicon-envelope icon" aria-hidden="true"></span>
+        <span class="text-muted">lxie@nwpu-aslp.org </span>
+        <span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+        <span class="text-muted">实验室主页 <a href="http://www.npu-aslp.org"> http://www.npu-aslp.org</a></span>
+        <p class="text-muted">&copy; 版权所有 2015 ASLP-NWPU 西北工业大学音频语音与语言处理研究组</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#myTab a').click(function (e) {
+         e.preventDefault();
+         $(this).tab('show');
+      });
+
+      $(function () {
+      $('#myTab a:last').tab('show');
+      })
+    </script>
+  </body>
+</html>
