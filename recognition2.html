@@ -62,8 +62,8 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar" role="tablist">
-            <li id="nav-intro-li" role="presentation" class="active"><a href="#intro" aria-controls="intro" role="tab" data-toggle="tab">语音输入</a></li>
-            <li id="nav-demo-li" role="presentation"><a href="recognition2.html#demo">在线体验</a></li>
+            <li id="nav-intro-li" role="presentation"><a href="#intro" aria-controls="intro" role="tab" data-toggle="tab">语音输入</a></li>
+            <li id="nav-demo-li" role="presentation" class="active"><a href="#demo" aria-controls="demo" role="tab" data-toggle="tab">在线体验</a></li>
             <li id="nav-doc-li"role="presentation">
               <a id="nav-docs" href="#document" aria-controls="document" role="tab" data-toggle="tab">开发者文档</a>
               <div id="nav-document" class="navbar navbar-default">
@@ -81,7 +81,7 @@
         </div> <!-- ./nav-sidebar -->
         <!-- Main content of Introduction-->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-content">
-          <div role="tabpanel" class="tab-pane active" id="intro">
+          <div role="tabpanel" class="tab-pane" id="intro">
             <div class="sub-section">
               <h3 class="page-header">语音识别： 将声音转化成文字的技术</h3>
               <p>语音识别，也被称为自动语音识别(Automatic Speech Recognition, ASR)或语音转文本识别(Speech To Text, STT)，其目标是让计算机自动将人类的语音内容转换为相应的文字。</p>
@@ -127,7 +127,7 @@
             </div>
           </div> <!-- End intro tabpanel -->
 
-          <div role="tabpanel" class="tab-pane" id="demo">
+          <div role="tabpanel" class="tab-pane active" id="demo">
             <div class="sub-section">
               <h4 class="page-header">语音识别在线体验</h4>
               <p class="center"><small>点击话筒按钮后，请对准话筒开始说话，在安静环境下测试。</small></p>
@@ -341,5 +341,10 @@
 
     </script>
     
+
+    <script src="js/dictate.js"></script>
+    <script src="js/recorder.js"></script>
+    <script src="js/mob.js"></script>
+
   </body>
 </html>
